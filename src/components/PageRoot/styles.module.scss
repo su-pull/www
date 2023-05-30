@@ -2,13 +2,9 @@
   text-align: left;
   padding: 120px 0;
 
-  ul {
-    margin: 0 16px;
-  }
-
   li {
-    margin: 8px 14px;
-    list-style-type: disc;
+    margin: 8px 16px;
+    list-style-type: '-  ';
     word-break: keep-all;
   }
 }

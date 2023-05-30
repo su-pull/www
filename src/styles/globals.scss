@@ -57,7 +57,7 @@ body {
   color: var(--color-text);
   text-align: center;
   width: 600px;
-  word-break: keep-all;
+  word-break: break-all;
   margin: auto;
   min-height: 100vh;
   font-size: 14px;
@@ -69,16 +69,10 @@ button {
   cursor: pointer;
 }
 
-.p__width {
-  width: 380px;
-}
-
 .main_icon {
-  border-radius: 8px;
+  border-radius: 50%;
   box-shadow: 0 0 4px -1px rgb(0 0 0 / 40%);
   pointer-events: none;
-  position: absolute;
-  transform: translateX(400px) translateY(20px);
 }
 
 blockquote {

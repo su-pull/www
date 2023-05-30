@@ -1,11 +1,11 @@
 form {
   z-index: 0;
   position: relative;
+  padding: 0 15px;
   background: var(--color-bg);
   color: var(--color-second-color);
   font-size: 12px;
   border-radius: 8px;
-  padding: 5px 15px;
   transition-duration: 0.5s;
   box-shadow: 0 0 2px -0.4px var(--color-shadow); // light
   border: solid 0.4px var(--color-border); // dark
@@ -31,8 +31,6 @@ textarea {
   outline: none;
   width: 400px;
   height: 300px;
-  resize: vertical;
-  overflow: auto;
   font-size: 12px;
 }
 
