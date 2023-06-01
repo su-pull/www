@@ -8,6 +8,7 @@
     "start": "next start",
     "commitlint": "commitlint -e $GIT_PARAMS",
     "eslint": "eslint --ext .ts,.tsx --fix .",
+    "stylelint": "stylelint \"**/*.scss\" --fix",
     "lint-staged": "lint-staged",
     "prepare": "husky install"
   },
@@ -49,9 +50,16 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "husky": "^8.0.1",
-    "lint-staged": "12.3.7"
+    "lint-staged": "12.3.7",
+    "postcss-scss": "^4.0.6",
+    "prettier": "^2.8.8",
+    "stylelint": "^15.6.2",
+    "stylelint-config-recess-order": "^4.0.0",
+    "stylelint-config-recommended": "^12.0.0"
   },
   "lint-staged": {
-    "*.{ts,tsx}": "eslint --fix"
+    "*.{js,ts,tsx}": "eslint --cache --fix",
+    "*.{css,scss}": "stylelint --cache --fix",
+    "*.{js,ts,tsx,css,scss,md,json,yml}": "prettier --write"
   }
 }
