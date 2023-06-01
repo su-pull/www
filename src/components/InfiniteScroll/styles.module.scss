@@ -8,10 +8,10 @@
 
 .container {
   display: flex;
-  justify-content: space-between; /* 左右に余白を設ける */
   align-items: center;
-  height: 120px;
+  justify-content: space-between; /* 左右に余白を設ける */
   width: 512px;
+  height: 120px;
 }
 
 .time {
@@ -20,10 +20,10 @@
 }
 
 .title {
+  width: 400px;
   font-size: 14px;
   font-weight: normal;
   color: var(--color-second);
-  width: 400px;
 }
 
 .subtitle {
@@ -33,22 +33,22 @@
 }
 
 .loading_ui {
-  color: var(--color-second-color);
-  font-family: inherit;
   padding: 4px 6px;
+  font-family: inherit;
+  color: var(--color-second-color);
 }
 
 .spinner {
   position: absolute;
-  bottom: 120px;
   right: 40px;
+  bottom: 120px;
   width: 20px;
   height: 20px;
-  border-radius: 50%;
   border-top: 2px solid rgb(72 72 72 / 20%);
   border-right: 2px solid rgb(72 72 72 / 20%);
   border-bottom: 2px solid rgb(72 72 72 / 20%);
   border-left: 2px solid rgb(206, 136, 136);
+  border-radius: 50%;
   animation: spin 1.2s linear infinite;
 }
 

@@ -1,60 +1,60 @@
 .fit_icons {
   position: absolute;
   inset: 0%;
-  margin: auto;
   width: fit-content;
   height: fit-content;
+  margin: auto;
 }
 
 .error_style {
   position: absolute;
   left: 50%;
-  transform: translate(-50%);
   white-space: nowrap;
+  transform: translate(-50%);
 }
 
 .area_container {
-  box-shadow: 0 0 2px -0.4px var(--color-shadow); // light
+  width: 100%;
   border: solid 0.4px var(--color-border); // dark
   border-radius: 4px;
-  width: 100%;
+  box-shadow: 0 0 2px -0.4px var(--color-shadow); // light
 }
 
 .massageButton {
   position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin: auto;
-  padding: 20px;
+  justify-content: center;
   width: 200px;
   height: 20px;
-  cursor: pointer;
-  border-radius: 10px;
+  padding: 20px;
+  margin: auto;
   font-family: inherit;
   color: var(--color-second-color);
+  cursor: pointer;
+  border-radius: 10px;
 }
 
 .visited_icon {
   position: relative;
-  border-radius: 50%;
-  right: 120px;
   top: 25px;
+  right: 120px;
+  border-radius: 50%;
   box-shadow: 0 0 6px -3px rgb(0 0 0 / 60%);
   transition-duration: 0.8s;
 }
 
 .visited_icon:hover {
-  transform: scale(1.2);
   transition-duration: 0.3s;
+  transform: scale(1.2);
 }
 
 .success {
   position: absolute;
   top: 50px;
   right: 40px;
-  white-space: nowrap;
   color: rgb(64 144 200);
+  white-space: nowrap;
 }
 
 @media screen and (max-width: 739.98px) {

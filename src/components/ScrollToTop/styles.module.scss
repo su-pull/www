@@ -1,36 +1,36 @@
 .ReturnTopPosition {
-  z-index: 4;
   position: fixed;
-  color: var(--color-second-color);
-  background: var(--color-bg);
-  height: 40px;
-  width: 40px;
   right: 0;
-  left: 0;
   bottom: 80px;
+  left: 0;
+  z-index: 4;
+  width: 40px;
+  height: 40px;
   margin: auto;
-  border-radius: 8px;
-  border-top: solid 1px gray;
-  border-left: solid 1px gray;
-  border-bottom: solid 1px #111;
-  border-right: solid 1px #111;
+  color: var(--color-second-color);
   cursor: pointer;
+  background: var(--color-bg);
+  border-top: solid 1px gray;
+  border-right: solid 1px #111;
+  border-bottom: solid 1px #111;
+  border-left: solid 1px gray;
+  border-radius: 8px;
 }
 
 .isBottom {
-  transform: translateY(0px);
   transition-duration: 0.4s;
+  transform: translateY(0px);
 }
 
 .isNotBottom {
-  transform: translateY(140px);
-  opacity: 0;
   visibility: hidden;
+  opacity: 0;
   transition-duration: 0.4s;
+  transform: translateY(140px);
 }
 
 .rotateCircle {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }

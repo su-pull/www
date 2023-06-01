@@ -1,37 +1,37 @@
 form {
-  z-index: 0;
   position: relative;
+  z-index: 0;
   padding: 0 15px;
-  background: var(--color-bg);
-  color: var(--color-second-color);
   font-size: 12px;
-  border-radius: 8px;
-  transition-duration: 0.5s;
-  box-shadow: 0 0 2px -0.4px var(--color-shadow); // light
+  color: var(--color-second-color);
+  background: var(--color-bg);
   border: solid 0.4px var(--color-border); // dark
+  border-radius: 8px;
+  box-shadow: 0 0 2px -0.4px var(--color-shadow); // light
+  transition-duration: 0.5s;
 }
 
 input {
+  width: 100%;
+  height: 20px;
   margin-right: auto;
   margin-left: auto;
   color: var(--color-second-color);
   background: none;
   border: none;
   outline: none;
-  width: 100%;
-  height: 20px;
 }
 
 textarea {
+  width: 400px;
+  height: 300px;
   margin-right: auto;
   margin-left: auto;
+  font-size: 12px;
   color: var(--color-second-color);
   background: none;
   border: none;
   outline: none;
-  width: 400px;
-  height: 300px;
-  font-size: 12px;
 }
 
 label {

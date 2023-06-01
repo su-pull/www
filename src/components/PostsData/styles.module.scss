@@ -7,19 +7,19 @@
 }
 
 .search_container {
-  box-shadow: 0 0 2px -0.4px var(--color-shadow);
-  border: solid 0.4px var(--color-border);
-  border-radius: 2px;
   width: fit-content;
   margin-left: 28px;
+  border: solid 0.4px var(--color-border);
+  border-radius: 2px;
+  box-shadow: 0 0 2px -0.4px var(--color-shadow);
 }
 
 @media screen and (max-width: 739.98px) {
   .search_box {
     position: relative;
     top: 0px;
-    width: 100%;
     left: 10%;
+    width: 100%;
   }
 
   .search_container {

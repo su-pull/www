@@ -1,20 +1,20 @@
 .pages_root {
-  text-align: left;
   padding: 120px 0;
+  text-align: left;
 
   li {
     margin: 8px 16px;
-    list-style-type: '-  ';
     word-break: keep-all;
+    list-style-type: '-  ';
   }
 }
 
 .fit_in {
   position: absolute;
   inset: 0%;
-  margin: auto;
   width: fit-content;
   height: fit-content;
+  margin: auto;
 }
 
 .fit_out {
@@ -24,14 +24,14 @@
 .spinner {
   position: absolute;
   inset: 0%;
-  margin: auto;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
+  margin: auto;
   border-top: 3px solid rgb(72 72 72 / 20%);
   border-right: 3px solid rgb(72 72 72 / 20%);
   border-bottom: 3px solid rgb(72 72 72 / 20%);
   border-left: 3px solid rgb(187, 187, 187);
+  border-radius: 50%;
   animation: spin 0.8s linear infinite;
 }
 

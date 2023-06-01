@@ -29,18 +29,18 @@
   }
 }
 pre {
-  border-radius: 20px;
+  width: 600px;
   padding: 20px 0;
   margin: 32px 0;
-  width: 600px;
-  transition: all 0.8s;
+  border-radius: 20px;
   box-shadow: 0 0 2px -0.5px rgb(0 0 0 / 40%);
+  transition: all 0.8s;
 }
 
 [data-rehype-pretty-code-fragment] div {
   position: relative;
-  height: 0;
   top: 45px;
+  height: 0;
   margin-right: 20px;
   font-size: 14px;
   color: gray;
@@ -55,6 +55,13 @@ pre {
 
 [data-rehype-pretty-code-fragment] code .line span {
   font-size: 14.4px;
+}
+
+p code {
+  padding: 0 5px 2px 5px;
+  color: var(--color-h1);
+  background: var(--color-code);
+  border-radius: 2px;
 }
 
 div[data-rehype-pretty-code-fragment] pre code {
@@ -72,20 +79,13 @@ code[data-line-numbers] {
 }
 
 code[data-line-numbers] .line::before {
-  margin-right: 0.75rem;
   display: inline-block;
   width: 1rem;
-  text-align: right;
+  margin-right: 0.75rem;
   color: #718096;
+  text-align: right;
   content: counter(lineNumber);
   counter-increment: lineNumber;
-}
-
-p code {
-  background: var(--color-code);
-  color: var(--color-h1);
-  padding: 0 5px 2px 5px;
-  border-radius: 2px;
 }
 
 @media screen and (max-width: 739.98px) {
