@@ -35,3 +35,9 @@ next-env.d.ts
 
 # prettier
 .vscode
+
+# eslint cache file
+.eslintcache
+
+# stylelint cache file
+.stylelintcache
