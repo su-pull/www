@@ -1,14 +1,13 @@
 .search_box {
   position: relative;
-  width: 520px;
-
+  width: 544px;
   padding: 0 8px;
   margin: auto;
 }
 
 .search_container {
+  position: relative;
   width: fit-content;
-  margin-left: 28px;
   border: solid 0.4px var(--color-border);
   border-radius: 2px;
   box-shadow: 0 0 2px -0.4px var(--color-shadow);
@@ -16,13 +15,12 @@
 
 @media screen and (max-width: 739.98px) {
   .search_box {
-    position: relative;
-    top: 0px;
-    left: 10%;
-    width: 100%;
+    width: 300px;
   }
 
   .search_container {
-    width: 80%;
+    left: 50%;
+    width: fit-content;
+    transform: translate(-50%, 0);
   }
 }

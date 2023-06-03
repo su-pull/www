@@ -43,7 +43,7 @@ const Infinite = ({ posts }: PostsProps): JSX.Element => {
       >
         <ul>
           {flattenedData?.map(({ slug, title, subtitle, date }) => (
-            <li className={styles.list_item} key={slug}>
+            <li key={slug}>
               <Link href={`/posts/${slug}`} className={styles.container}>
                 <h2 className={styles.title}>
                   {title}
