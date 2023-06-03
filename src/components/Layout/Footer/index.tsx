@@ -7,6 +7,7 @@ import { RiGithubFill } from 'react-icons/ri';
 const Footer = (): JSX.Element => {
   const time = new Date();
   const year = time.getFullYear();
+  const feedUrl = process.env.PROD_URL + '/feed.xml';
 
   return (
     <Fragment>
@@ -20,7 +21,7 @@ const Footer = (): JSX.Element => {
             <Link href="/mail" prefetch={false}>
               <HiOutlineMail size={22} />
             </Link>
-            <a href="/feed.xml" target="_blank">
+            <a href={feedUrl}>
               <HiRss size={22} />
             </a>
           </div>
