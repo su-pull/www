@@ -17,16 +17,14 @@ const Page = (): JSX.Element => {
       <hr />
       <h1>Career</h1>
       <ul>
-        <li>1994 Born in Kitakyushu, Fukuoka, Japan</li>
-        <li>2014 Traveled to the USA, Seattle, and Canada</li>
-        <li>2016 Joined PC DEPOT Co., Ltd.</li>
-        <li>2017 Left PC DEPOT Co., Ltd.</li>
-        <li>2018 Passed the High School Equivalency Exam</li>
-        <li>2019 Self-studied design</li>
-        <li>2020 Self-studied design</li>
-        <li>2021 Started learning programming and git</li>
-        <li>2022 Built a REST and GraphAPI.</li>
-        <li>2023 Feedbacks in Front End Framework API experimental features</li>
+        <li>1994 born in Kitakyushu, Fukuoka, Japan</li>
+        <li>2014 traveled to the USA, Seattle, and Canada</li>
+        <li>2016-2017 worked PC DEPOT Co. Ltd.</li>
+        <li>2018 passed the high school equivalency exam</li>
+        <li>2019-2020 self studied design</li>
+        <li>2021 started learning programming and git</li>
+        <li>2022 built a REST and Graph API</li>
+        <li>2023 feedback JS experimental framework</li>
       </ul>
     </>
   );
