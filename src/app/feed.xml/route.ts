@@ -15,25 +15,25 @@ export async function GET() {
           <![CDATA[su-pull]]>
         </title>
         <description>
-          <![CDATA[the 2xxx year fight of my load]]>
+          <![CDATA[S.watanabe's web site]]>
         </description>
         <link>${URL}</link>
         <generator>Next.js Route Handlers</generator>
-        <lastBuildDate>${posts[0].date}</lastBuildDate>  
+        <lastBuildDate>${new Date(posts[0].date).toUTCString()}</lastBuildDate>  
         <atom:link href="${URL}/feed.xml" rel="self" type="application/rss+xml"/>
         ${posts
           .map(
-            (post) => `
+            ({ title, subtitle, slug, date }) => `
               <item>
                 <title>
-                  <![CDATA[ ${post.title} ]]>
+                  <![CDATA[ ${title} ]]>
                 </title>
                 <description>
-                  <![CDATA[ ${post.subtitle} ]]>
+                  <![CDATA[ ${subtitle} ]]>
                 </description>
-                <link>/${post.slug}</link>
-                <guid isPermaLink="true">/${post.slug}</guid>
-                <pubDate>${post.date}</pubDate>
+                <link>/${slug}</link>
+                <guid isPermaLink="true">/${slug}</guid>
+                <pubDate>${new Date(date).toUTCString()}</pubDate>
               </item>
             `
           )
