@@ -1,19 +1,18 @@
 .post_to_posts {
   position: absolute;
-  top: 142px;
   right: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 40px;
   height: 40px;
+  margin-top: 18px;
   color: var(--color-second-color);
   transform: translateY(-100%);
 }
 .mail_to_posts {
   position: absolute;
-  top: 120px;
-  right: 0px;
+  right: 74px;
   display: flex;
   align-items: center;
   justify-content: center;

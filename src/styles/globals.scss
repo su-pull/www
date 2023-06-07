@@ -52,6 +52,9 @@ html {
 
 body {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 600px;
   min-height: 100vh;
   margin: auto;
@@ -60,7 +63,6 @@ body {
   text-align: center;
   word-break: break-all;
   background-color: var(--color-bg);
-  transition-duration: 0.8s;
 }
 
 button {
@@ -79,23 +81,6 @@ blockquote {
   padding-left: 20px;
   margin: 0;
   border-left: solid 6px gray;
-}
-
-hr {
-  margin-bottom: 20px;
-}
-
-dt {
-  font-size: 10px;
-}
-
-dd {
-  margin-bottom: 14px;
-  margin-left: 0;
-}
-
-dl {
-  margin: 10px 0;
 }
 
 a {
