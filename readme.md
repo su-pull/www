@@ -5,12 +5,13 @@
 
 You can fork this site and start developing right away.
 
-## Stacks
+## Built in
 
-- [Next.js](https://nextjs.org/) - standard web static generate React framework this App Router
+- [Next.js](https://nextjs.org/) - standard web static generate React framework
 - [Vercel](https://vercel.com/) - very faster Next.js server
 - [Rehype Pretty Code](https://rehype-pretty-code.netlify.app/) - markdown syntax highlight
 
 ## License
 
-MIT
+The source code is under [MIT License](https://github.com/su-pull/www.su-pull.net/blob/main/license).  
+other unique content is under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
