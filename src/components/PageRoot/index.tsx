@@ -8,10 +8,8 @@ type AdjusterProps = {
 
 const PageRoot = ({ children }: AdjusterProps): JSX.Element => {
   const pathname = usePathname();
-
-  return (
-    <main className={`${styles.pages_root} ${pathname.includes('/posts/') && styles.slug_margin_top}`}>{children}</main>
-  );
+  const classes = styles.pages_root + ' ' + (pathname.includes('/posts/') && styles.slug_margin_top);
+  return <main className={classes}>{children}</main>;
 };
 
 export default PageRoot;

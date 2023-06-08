@@ -8,11 +8,7 @@ const Text = (): JSX.Element => {
   return (
     <Fragment>
       <div className={styles.Text} key={pathname}>
-        {pathname == '/'
-          ? 'Home'
-          : pathname.includes('/posts')
-          ? 'Posts'
-          : pathname.slice(1).replace(/^[a-z]/, (char) => char.toUpperCase())}
+        {pathname == '/' ? 'Home' : pathname.slice(1).replace(/^[a-z]/, (char) => char.toUpperCase())}
       </div>
     </Fragment>
   );

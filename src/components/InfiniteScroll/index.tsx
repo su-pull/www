@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { Fragment, useEffect, useCallback } from 'react';
 import useSWRInfinite from 'swr/infinite';
 import getKey from 'lib/getKey';
+import fetcher from 'lib/fetcher';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import pageSize from 'lib/pageSize';
 import PostsData from 'types/PostsData';
@@ -12,7 +13,7 @@ import styles from './styles.module.scss';
 
 const Infinite = ({ posts }: PostsProps): JSX.Element => {
   // isValidating and Spinner UI is seamless ux.
-  const { data, size, setSize } = useSWRInfinite<PostsData>(getKey, {
+  const { data, size, setSize } = useSWRInfinite<PostsData>(getKey, fetcher, {
     revalidateFirstPage: false,
     fallbackData: posts,
   });

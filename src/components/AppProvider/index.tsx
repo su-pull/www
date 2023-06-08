@@ -1,10 +1,7 @@
 'use client';
 
-import { ReactNode } from 'react';
-import { SWRConfig } from 'swr';
+import type { ReactNode } from 'react';
 import { Analytics } from '@vercel/analytics/react';
-import GlobalFont from 'components/Font';
-import fetcher from 'lib/fetcher';
 import Layout from 'components/Layout';
 import PageRoot from 'components/PageRoot';
 
@@ -14,13 +11,10 @@ type Provider = {
 
 const AppProvider = ({ children }: Provider): JSX.Element => {
   return (
-    <SWRConfig value={{ fetcher }}>
-      <GlobalFont />
+    <Layout>
       <Analytics mode={'production'} />
-      <Layout>
-        <PageRoot>{children}</PageRoot>
-      </Layout>
-    </SWRConfig>
+      <PageRoot>{children}</PageRoot>
+    </Layout>
   );
 };
 

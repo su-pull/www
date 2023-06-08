@@ -38,6 +38,10 @@ pre {
   transition: all 0.8s;
 }
 
+code {
+  font-family: var(--source);
+}
+
 [data-rehype-pretty-code-fragment] div {
   position: relative;
   top: 45px;

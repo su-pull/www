@@ -3,6 +3,11 @@ import 'styles/mobile.scss';
 import AppProvider from 'components/AppProvider';
 import { Metadata } from 'next';
 import { ReactNode } from 'react';
+import { Playfair_Display } from 'next/font/google';
+import { Source_Serif_Pro } from 'next/font/google';
+
+const source = Source_Serif_Pro({ subsets: ['latin'], weight: '400', variable: '--source' });
+const playfair = Playfair_Display({ subsets: ['latin'], weight: '400' });
 
 export const metadata: Metadata = {
   icons: {
@@ -17,9 +22,11 @@ type RootLayoutProps = {
 export const fetchCache = 'force-cache';
 
 export default function RootLayout({ children }: RootLayoutProps) {
+  const font = playfair.className + ' ' + source.variable;
+
   return (
     <html lang="en">
-      <body>
+      <body className={font}>
         <AppProvider>{children}</AppProvider>
       </body>
     </html>
