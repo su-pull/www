@@ -9,8 +9,7 @@ const Page = (): JSX.Element => {
       <p>
         I am a person who designs and creates software in Tokyo.
         <br />I like to work on
-        <a href="https://works.su-pull.net/"> my-projects</a> and I want to be part of the newest and most advanced
-        areas.
+        <a href="https://works.su-pull.net/"> my-projects</a> and I want to be part of newest and most advanced areas.
       </p>
       <h1>I history</h1>
       <ul>
@@ -21,7 +20,7 @@ const Page = (): JSX.Element => {
         <li>2019-2020 self studied design</li>
         <li>2021 started learning programming and git</li>
         <li>2022 built a REST and Graph API</li>
-        <li>2023 feedback JS experimental framework</li>
+        <li>2023 made juster and react-page-fitter</li>
       </ul>
     </>
   );
