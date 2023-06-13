@@ -7,13 +7,14 @@ import { RiGithubFill } from 'react-icons/ri';
 const Footer = (): JSX.Element => {
   const time = new Date();
   const year = time.getFullYear();
-  const feedUrl = process.env.PROD_URL + '/feed.xml';
 
   return (
     <Fragment>
       <footer className={styles.footer_main}>
         <div className={styles.footer_container}>
-          <div className={styles.footer_text}>{[year, ' © S.watanabe. license MIT']}</div>
+          <Link href="/" className={styles.footer_text}>
+            {[year, ' © S.watanabe. license MIT']}
+          </Link>
           <div className={styles.footer_icon}>
             <a href="https://github.com/su-pull">
               <RiGithubFill size={22} />
@@ -21,7 +22,7 @@ const Footer = (): JSX.Element => {
             <Link href="/mail">
               <HiOutlineMail size={22} />
             </Link>
-            <a href={feedUrl}>
+            <a href="/feed.xml">
               <HiRss size={22} />
             </a>
           </div>

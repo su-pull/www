@@ -9,7 +9,7 @@ export default async function sitemap() {
   const posts = await getPosts();
   const url = process.env.PROD_URL;
 
-  const postss = posts.map((post) => ({
+  const post = posts.map((post) => ({
     url: url + '/' + post.slug,
     lastModified: new Date(post.date).toUTCString(),
   }));
@@ -19,5 +19,5 @@ export default async function sitemap() {
     lastModified: new Date().toUTCString(),
   }));
 
-  return [...routes, ...postss];
+  return [...routes, ...post];
 }
