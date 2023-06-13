@@ -15,7 +15,6 @@
   "dependencies": {
     "@vercel/analytics": "^0.1.11",
     "classnames": "^2.3.1",
-    "date-fns": "^2.29.2",
     "framer-motion": "^10.12.8",
     "fs": "^0.0.1-security",
     "gray-matter": "^4.0.3",
@@ -25,7 +24,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
     "react-infinite-scroll-component": "^6.1.0",
-    "react-page-fitter": "^1.2.2",
+    "react-page-fitter": "^2.0.6",
     "rehype-pretty-code": "^0.9.4",
     "rehype-stringify": "^9.0.3",
     "remark": "^14.0.2",
