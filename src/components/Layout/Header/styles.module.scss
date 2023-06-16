@@ -15,17 +15,6 @@
   display: flex;
 }
 
-.shadow {
-  position: absolute;
-  top: 0px;
-  z-index: 0;
-  width: 90px;
-  height: 42px;
-  background: var(--color-header);
-  border-radius: 8px;
-  box-shadow: 0 0 8px -6px rgb(0 0 0 / 40%);
-}
-
 .link_container {
   position: relative;
   z-index: 3;
@@ -40,6 +29,7 @@
 }
 
 .after_color {
+  font-weight: bold;
   color: var(--color-light);
 }
 
@@ -55,10 +45,6 @@
     right: 0;
     left: auto;
     font-size: 10px;
-  }
-  .shadow {
-    top: 10px;
-    margin-left: -4px;
   }
   .link_container {
     right: 4px;

@@ -1,7 +1,7 @@
 .footer_text {
   position: relative;
   font-size: 12px;
-  color: var(--color-light);
+  color: var(--color-second-color);
   text-align: left;
 }
 .footer_icon {
@@ -13,13 +13,13 @@
 
 .footer_main {
   position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  right: 64px;
+  bottom: 20px;
+  left: 18px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  height: 120px;
+  height: 80px;
 }
 
 .footer_container {
@@ -30,9 +30,9 @@
 }
 @media screen and (max-width: 739.98px) {
   .footer_main {
-    right: 16px;
+    right: 36px;
   }
   .footer_text {
-    left: 16px;
+    left: 24px;
   }
 }

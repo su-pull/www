@@ -1,22 +1,16 @@
 .pages_root {
-  padding: 120px 0;
+  padding: 80px 0;
   text-align: left;
 
   li {
     margin: 8px 16px;
-    word-break: keep-all;
     list-style-type: '-  ';
   }
 }
 
 @media screen and (max-width: 739.98px) {
-  .slug_margin_top {
-    margin-top: -80px;
-  }
   .pages_root {
-    display: table-cell;
     width: 100%;
-    padding: 120px 16px;
-    vertical-align: middle;
+    padding: 120px 24px;
   }
 }

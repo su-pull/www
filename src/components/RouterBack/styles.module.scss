@@ -1,15 +1,15 @@
 .post_to_posts {
-  position: absolute;
-  right: 0px;
+  position: relative;
+  left: 560px;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 40px;
   height: 40px;
-  margin-top: 18px;
   color: var(--color-second-color);
-  transform: translateY(-100%);
 }
+
 .mail_to_posts {
   position: absolute;
   right: 74px;
@@ -24,10 +24,10 @@
 
 @media screen and (max-width: 739.98px) {
   .post_to_posts {
-    right: 18px;
+    left: calc(100% - 40px);
+    margin-top: -40px;
   }
-
   .mail_to_posts {
-    right: 6px;
+    right: 12px;
   }
 }
