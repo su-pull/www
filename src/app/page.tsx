@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import generateSEOData from 'lib/generateSEOData';
 
-export const metadata: Metadata = generateSEOData({ title: 'Home', subtitle: 'About', date: '1994' });
+export const metadata: Metadata = generateSEOData({ title: 'About', subtitle: 'personal page', date: '1994' });
 
 const Page = (): JSX.Element => {
   return (
