@@ -1,11 +1,9 @@
-import { format } from 'date-fns';
 import { Metadata } from 'next';
 import Params from 'types/Params';
 import getPostData from 'lib/getPostData';
 import getSlugPath from 'lib/getSlugPath';
-import RouterBack from 'components/RouterBack';
-import styles from './styles.module.scss';
 import generateSEOData from 'lib/generateSEOData';
+import PostData from 'components/PostData';
 
 const getPost = async (slug: string) => {
   const post = await getPostData(slug);
@@ -20,16 +18,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
 async function Page({ params }: Params) {
   const post = await getPost(params.slug);
 
-  return (
-    <>
-      <RouterBack />
-      <div className={styles.size_time}>
-        {format(new Date(post.date as string | number | Date), 'MMMM eeee, do yyyy')}
-      </div>
-      <h1 className={styles.color_h1}>{post.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: post.content }} />
-    </>
-  );
+  return <PostData post={post} />;
 }
 
 export async function generateStaticParams() {

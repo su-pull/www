@@ -17,11 +17,7 @@ async function getPosts() {
 async function Page() {
   const posts = await getPosts();
 
-  return (
-    <>
-      <PostsData posts={posts} />
-    </>
-  );
+  return <PostsData posts={posts} />;
 }
 
 export default Page;
