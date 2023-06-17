@@ -1,6 +1,6 @@
 'use client';
 
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, m } from 'framer-motion';
 import { useState } from 'react';
 import { useMail } from 'hooks/useMail';
 import RouterBack from 'components/RouterBack';
@@ -31,11 +31,11 @@ const MailForm = (): JSX.Element => {
 
   const MailFormDom = (
     <form>
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1.4 }}>
+      <m.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1.4 }}>
         <label htmlFor="status" className={styles.error_style}>
           {error === undefined ? '' : error === false ? 'complete' : '*email is required for available'}
         </label>
-      </motion.div>
+      </m.div>
 
       <label htmlFor="name">Name*</label>
       <div className={styles.area_container}>
@@ -81,15 +81,23 @@ const MailForm = (): JSX.Element => {
     <div className={styles.mobile_width}>
       <RouterBack />
       <div className={styles.fit_icons}>
-        <Image className={styles.visited_icon} src={profilePic} alt="art" quality={100} width={80} height={80} />
+        <Image
+          className={styles.visited_icon}
+          src={profilePic}
+          priority
+          alt="art"
+          quality={100}
+          width={80}
+          height={80}
+        />
         <div className={styles.success}>success!!</div>
       </div>
       {error === undefined ? (
-        <AnimatePresence mode="wait">{error === undefined && <motion.div>{MailFormDom}</motion.div>}</AnimatePresence>
+        <AnimatePresence mode="wait">{error === undefined && <m.div>{MailFormDom}</m.div>}</AnimatePresence>
       ) : error === false ? (
         <AnimatePresence mode="wait">
           {!error && (
-            <motion.div
+            <m.div
               key="1"
               initial={{ opacity: 1, scale: 1 }}
               animate={{ opacity: 0, scale: 0 }}
@@ -97,20 +105,20 @@ const MailForm = (): JSX.Element => {
               transition={{ duration: 0.8, delay: 1 }}
             >
               {MailFormDom}
-            </motion.div>
+            </m.div>
           )}
         </AnimatePresence>
       ) : (
         <AnimatePresence mode="wait">
           {error && (
-            <motion.div
+            <m.div
               key="2"
               onClick={() => setError(undefined)}
               animate={{ y: -4, transition: { type: 'spring', duration: 1, bounce: 1 } }}
               exit={{ y: 0 }}
             >
               {MailFormDom}
-            </motion.div>
+            </m.div>
           )}
         </AnimatePresence>
       )}

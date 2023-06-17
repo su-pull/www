@@ -4,6 +4,7 @@ import getPostData from 'lib/getPostData';
 import getSlugPath from 'lib/getSlugPath';
 import generateSEOData from 'lib/generateSEOData';
 import PostData from 'components/PostData';
+import Main from 'components/Main';
 
 const getPost = async (slug: string) => {
   const post = await getPostData(slug);
@@ -18,7 +19,11 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
 async function Page({ params }: Params) {
   const post = await getPost(params.slug);
 
-  return <PostData post={post} />;
+  return (
+    <Main>
+      <PostData post={post} />
+    </Main>
+  );
 }
 
 export async function generateStaticParams() {

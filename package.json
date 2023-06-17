@@ -24,7 +24,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
     "react-infinite-scroll-component": "^6.1.0",
-    "react-page-fitter": "^2.0.8",
+    "react-page-fitter": "^2.0.9",
     "rehype-pretty-code": "^0.9.4",
     "rehype-stringify": "^9.0.3",
     "remark": "^14.0.2",

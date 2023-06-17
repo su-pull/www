@@ -1,11 +1,12 @@
 import { Metadata } from 'next';
 import generateSEOData from 'lib/generateSEOData';
+import Main from 'components/Main';
 
 export const metadata: Metadata = generateSEOData({ title: 'About', subtitle: 'personal page', date: '1994' });
 
 const Page = (): JSX.Element => {
   return (
-    <>
+    <Main>
       <p>
         I am a person who designs and creates software in Tokyo.
         <br />I like to work on
@@ -22,7 +23,7 @@ const Page = (): JSX.Element => {
         <li>2022 built a REST and Graph API</li>
         <li>2023 made juster and react-page-fitter</li>
       </ul>
-    </>
+    </Main>
   );
 };
 

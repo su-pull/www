@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import getAllPosts from 'lib/getAllPosts';
 import PostsData from 'components/PostsData';
 import generateSEOData from 'lib/generateSEOData';
+import Main from 'components/Main';
 
 export const metadata: Metadata = generateSEOData({
   title: 'Posts',
@@ -17,7 +18,11 @@ async function getPosts() {
 async function Page() {
   const posts = await getPosts();
 
-  return <PostsData posts={posts} />;
+  return (
+    <Main>
+      <PostsData posts={posts} />
+    </Main>
+  );
 }
 
 export default Page;
