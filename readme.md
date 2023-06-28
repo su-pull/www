@@ -3,13 +3,18 @@
 
 # www.su-pull.net
 
-You can fork this site and start developing right away.
+Sub domains.
+
+- [link.su-pull.net](https://link.su-pull.net)
+- [ja.su-pull.net](https://ja.su-pull.net)
+- [works.su-pull.net](https://works.su-pull.net)
 
 ## Built in
 
 - [Next.js](https://nextjs.org/) - standard web static generate React framework
 - [Vercel](https://vercel.com/) - very faster Next.js server
 - [Rehype Pretty Code](https://rehype-pretty-code.netlify.app/) - markdown syntax highlight
+  You can fork this site and start developing right away.
 
 ## License
 
