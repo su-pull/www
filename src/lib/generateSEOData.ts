@@ -4,6 +4,13 @@ const generateSEOData = ({ title, subtitle, date }: SeoData) => {
   return {
     title: title,
     description: subtitle,
+    metadataBase: new URL(process.env.PROD_URL as string),
+    alternates: {
+      canonical: '/',
+      languages: {
+        'en-US': '/en-US',
+      },
+    },
     openGraph: {
       title: title,
       description: subtitle,
