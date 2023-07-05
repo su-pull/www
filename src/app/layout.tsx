@@ -20,6 +20,7 @@ type RootLayoutProps = {
 };
 
 export const fetchCache = 'force-cache';
+export const dynamicParams = false;
 
 export default function RootLayout({ children }: RootLayoutProps) {
   const font = playfair.className + ' ' + source.variable;
