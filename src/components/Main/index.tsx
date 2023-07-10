@@ -25,7 +25,7 @@ const Main = ({ children }: MainProps): JSX.Element => {
         variants={variants}
         animate="enter"
         initial="hidden"
-        transition={{ duration: 0.2 }}
+        transition={{ duration: 0.8 }}
         className={styles.pages_root}
       >
         {children}
